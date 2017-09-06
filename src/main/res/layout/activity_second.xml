@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.vbrowser.Second">
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="0.10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_urlgo"
+        >
+
+        <EditText
+            android:layout_weight="0.95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_url"
+            />
+        <Button
+            android:layout_weight="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/btn_go"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_weight="0.80"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wv_brow">
+
+    </WebView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"/>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_weight="0.25"
+            android:id="@+id/fwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Forward" />
+
+        <Button
+            android:layout_weight="0.25"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Back" />
+
+        <Button
+            android:layout_weight="0.25"
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Reload" />
+
+        <Button
+            android:layout_weight="0.25"
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Clear" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
